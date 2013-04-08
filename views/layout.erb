@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf=8">
+		<meta name="viewport" content="width=device-width">
+		<title>Friends List Website</title>
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="css/style.css"> -->
+	</head>
+	<body>
+		<div class="container">
+			<h1>Friend List WebApp</h1>
+			<div class="navbar">
+				<div class="navbar-inner">
+					<a class="brand" href="/">Friend List WebApp</a>
+					<ul class="nav">
+						<li class="active"><a href="/friends">List Friends</a></li>
+						<li><a href="/new_friend">Add Friends</a></li>
+					</ul>
+				</div> <!-- navbar-inner -->
+			</div> <!-- navbar -->
+			<div class="dynamic_content">
+				<%= yield %>
+			</div>
+		</div> <!-- container -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="/js/bootstrap.js"></script>
+		<script scr="/js/app.js"></script>
+	</body>
+</html>
+
+

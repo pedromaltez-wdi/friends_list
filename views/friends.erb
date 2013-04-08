@@ -1,0 +1,9 @@
+<div class ="friend_list">
+	<h2>Your Friends</h2>
+		<% for friend in @friends %>
+		<p>
+			[<a href="/friend/<%= friend['uuid'] %>/delete">del</a>]
+			<a href="/friend/<%= friend['uuid'] %>"><%= friend['first_name'] %></a>
+		</p>
+	<% end %>
+</div>
