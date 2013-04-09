@@ -60,7 +60,7 @@ get '/friend/:uuid/delete' do
 	conn = PG.connect(:dbname =>'friends_list', :host => 'localhost')
 	@friends = conn.exec(sql)
 	conn.close
-	redirect '/'
+	redirect '/friends'
 end
 
 
